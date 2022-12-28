@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Score Keep</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="stylesheet" href="assets/score.css">
+    </head>
+    <header>
+        <h1 class="title">Score Keep</h1>
+    </header>
+    <body>
+        <div class="container">
+            <div class="left">
+                <h3 class="team" contenteditable="true">Home</h3>
+                <h2 class="score" id="home-score">0</h2>
+                <div class="wrapper">
+                    <button class="scr-btn" id="home-score-btn-1" onclick="increaseHomeScoreOne()">+ 1</button>
+                    <button class="scr-btn" id="home-score-btn-2" onclick="increaseHomeScoreTwo()">+ 2</button>
+                    <button class="scr-btn" id="home-score-btn-3" onclick="increaseHomeScoreThree()">+ 3</button>
+                    <button class="scr-btn" id="home-score-btn-4" onclick="decreaseHomeScoreOne()">- 1</button>
+                    <button class="scr-btn" id="home-score-btn-5" onclick="decreaseHomeScoreTwo()">- 2</button>
+                    <button class="scr-btn" id="home-score-btn-6" onclick="decreaseHomeScoreThree()">- 3</button>
+                </div>
+            </div>
+            <div class="right">
+                <h3 class="team" contenteditable="true">Away</h3>
+                <h2 class="score" id="guest-score">0</h2>
+                <div class="wrapper">
+                    <button class="scr-btn" id="guest-score-btn-1" onclick="increaseGuestScoreOne()">+ 1</button>
+                    <button class="scr-btn" id="guest-score-btn-2" onclick="increaseGuestScoreTwo()">+ 2</button>
+                    <button class="scr-btn" id="guest-score-btn-3" onclick="increaseGuestScoreThree()">+ 3</button>
+                    <button class="scr-btn" id="guest-score-btn-4" onclick="decreaseGuestScoreOne()">- 1</button>
+                    <button class="scr-btn" id="guest-score-btn-5" onclick="decreaseGuestScoreTwo()">- 2</button>
+                    <button class="scr-btn" id="guest-score-btn-6" onclick="decreaseGuestScoreThree()">- 3</button>
+                </div>
+            </div>
+        </div>
+        <script src="assets/score.js"></script>
+    </body>
+    <footer>
+        <div>
+            <button class="reset" id="reset-btn" onclick="resetScoreZero()">NEW GAME</button>
+        </div>        
+    </footer>
+</html>
